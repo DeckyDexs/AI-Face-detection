@@ -1,0 +1,806 @@
+/*  ------------------------------------------------------------- LINK ------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monoton&display=swap');
+
+
+
+
+/*  -------------------------------------------------- DESIGN FOR THE PAGE HERE --------------------------------------------------- */
+
+body{
+  margin: 0;
+  padding: 0 ;
+  background-color: #333;
+  color: antiquewhite;
+}
+
+*{
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+
+
+
+
+/* ------------------------------------------------------------ NAVBAR ------------------------------------------------------------*/
+
+header {
+  background-color: #202020;
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 10px 2px #7c7c7c;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 35px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Monoton", sans-serif;
+}
+
+span {
+  color: #ff0; 
+}
+
+.link{
+  margin-right: 25px;
+}
+
+.link a {
+  text-decoration: none;
+  color: #fff;
+  padding:24px 24px 12px 12px;
+  font-family: "Alfa Slab One", serif;
+
+}
+
+.link a:hover{
+  color: #ff0;
+  font-size: 35px;
+} 
+
+
+
+
+/* --------------------------------------------------------- INTRODUCTION --------------------------------------------------------- */
+
+main{
+  margin-top: 10px;
+}
+
+.introduction{
+  padding: 3% 30px;
+  text-align: center;
+  margin-top: -30px;
+  align-items: center;
+}
+
+.introduction h1{
+  color: #ff0; 
+}
+
+.introduction p{
+  font-size: 20px;
+}
+
+
+
+
+/*  ----------------------------------------------------------- WEBCAM ----------------------------------------------------------- */
+
+.mirrored-webcam {
+  transform: scaleX(-1);
+  position: "relative";
+  margin-left: 100px;
+  left:0;
+  right:0;
+  text-align: "center";
+  z-index: 9;
+  width: 550px;
+  height: 430px;
+  margin-top: -45px;
+  border-radius: 12px;
+
+}
+
+.mirrored-canvas{
+  transform: scaleX(-1);
+  position: "absolute";
+  margin-left: 100px;
+  left:0;
+  right:0;
+  text-align: "center";
+  z-index: 10;
+  width: 550px;
+  height: 430px;
+  margin-top: -45px;
+  margin-left: -550px;
+  border-radius: 12px;
+
+}
+
+
+
+
+/*  ----------------------------------------------------------- RESULTS ----------------------------------------------------------- */
+
+article{
+  color: antiquewhite;
+
+}
+
+.risultato{
+  width: 630px;
+  height: 430px;
+  float: right;
+  margin-top: 0px;
+  border-radius: 12px;
+  margin-right: 90px;
+ /* border: 1px #a3a3a3 solid;*/
+  display: none;
+}
+
+.risultato .inside-box{
+  padding: 20px;
+  text-align: center;
+  text-align: center;
+}
+
+.risultato .inside-box h1{
+  font-size: 55px;
+  font-family: "Monoton", sans-serif;
+  color: antiquewhite;
+  font-weight: 400;
+}
+
+.risultato .inside-box p{
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+.try{
+  width: 630px;
+  height: 430px;
+  float: right;
+  margin-top: 0px;
+  border-radius: 12px;
+  margin-right: 90px;
+ /* border: 1px #a3a3a3 solid;*/
+  display: block;
+}
+
+.try .inside-box{
+  padding: 20px;
+  text-align: center;
+  text-align: center;
+}
+
+.try .inside-box h1{
+  font-size: 55px;
+  font-family: "Monoton", sans-serif;
+  color: antiquewhite;
+  font-weight: 400;
+}
+
+.try .inside-box p{
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+
+
+
+/* ------------------------------------------------------------ FOOTER ------------------------------------------------------------ */
+
+footer {
+  background-color: #202020;
+  color: #fff; 
+  padding: 10px; 
+  text-align: center; 
+  position: fixed;
+  bottom: -0;
+  width: 100%; 
+  border-top: 1px solid #ff0;
+}
+
+footer p{
+  font-size: 12px;
+}
+
+
+
+
+/*------------------------------------------------------------ MEDIA (max-width:1430px) ------------------------------------------------------------*/
+
+@media (max-width:1430px) {
+  
+
+  .risultato{
+    width: 510px;
+    height: 330px;
+    display: none;
+  }
+  
+  .risultato .inside-box{
+    padding: 20px;
+    padding-right: 10px;
+    text-align: center;
+    text-align: center;
+  }
+  
+  .risultato .inside-box h1{
+    font-size: 55px;
+    font-family: "Monoton", sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+  }
+  
+  .risultato .inside-box p{
+    font-size: 20px;
+    color: antiquewhite;
+  }
+
+
+
+  
+  .try{
+    width: 510px;
+    height: 330px;
+    float: right;
+    margin-top: 0px;
+    border-radius: 12px;
+    margin-right: 90px;
+   /* border: 1px #a3a3a3 solid;*/
+    display: block;
+  }
+  
+  .try .inside-box{
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+  }
+  
+  .try .inside-box h1{
+    font-size: 55px;
+    font-family: "Monoton", sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+  }
+  
+  .try .inside-box p{
+    font-size: 20px;
+    color: antiquewhite;
+  }
+  
+
+}
+
+
+
+
+/*------------------------------------------------------------ MEDIA (max-width:1278px) ------------------------------------------------------------*/
+
+@media (max-width:1278px){
+
+
+.App{
+    margin-top: 40px;
+    float: none;
+}
+
+
+article{
+    align-items: center;
+}
+
+.risultato{
+    width: 100%;
+    height: 330px;
+    float: none;
+    margin: 0 0 0 0;
+    position: absolute;
+    padding-bottom: 45px;
+}           
+
+
+.risultato .inside-box{
+    padding: 10px;
+    text-align: center;
+}
+
+.risultato .inside-box h1{
+    font-size: 55px;
+    font-family: "Monoton", sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+}
+
+.risultato .inside-box p{
+font-size: 20px;
+color: antiquewhite;
+}
+
+  
+.try{
+    width: 100%;
+    height: 330px;
+    float: none;
+    margin: 0 0 0 0;
+    position: absolute;
+    padding-bottom: 45px;
+  }
+  
+  .try .inside-box{
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+  }
+  
+  .try .inside-box h1{
+    font-size: 55px;
+    font-family: "Monoton", sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+  }
+  
+  .try .inside-box p{
+    font-size: 20px;
+    color: antiquewhite;
+  }
+
+}
+
+
+/*------------------------------------------------------------ MEDIA (max-width:1278px) ------------------------------------------------------------*/
+
+@media (max-width:1278px){
+
+  header {
+    background-color: #202020;
+    color: #fff;
+   /* padding: 15px 30px;*/
+    box-shadow: 2px 2px 10px 2px #7c7c7c;
+  }
+
+  .navbar {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Monoton", sans-serif;
+  }
+  
+  span {
+    color: #ff0; 
+  }
+  
+  .link{
+    
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #fff;
+    padding:12px 24px 12px 24px;
+    font-family: "Alfa Slab One", serif;
+  
+  }
+  
+  .link a:hover{
+    color: #ff0;
+  } 
+
+.App{
+    margin: 45px auto;
+
+}
+
+}
+
+
+/*------------------------------------------------------------ MEDIA (max-width:1025px) ------------------------------------------------------------*/
+
+@media (max-width:1025px){
+
+    
+.mirrored-webcam {
+    transform: scaleX(-1);
+    position: "relative";
+    margin-left: 230px;
+    left:0;
+    right:0;
+    text-align: "center";
+    z-index: 9;
+    width: 550px;
+    height: 430px;
+    margin-top: -45px;
+    border-radius: 12px;
+  
+  }
+  
+  .mirrored-canvas{
+    transform: scaleX(-1);
+    position: "absolute";
+    margin-left: 100px;
+    left:0;
+    right:0;
+    text-align: "center";
+    z-index: 10;
+    width: 550px;
+    height: 430px;
+    margin-top: -45px;
+    margin-left: -550px;
+    border-radius: 12px;
+  
+  }
+}
+
+
+
+  /*------------------------------------------------------------ MEDIA (max-width:769px) ------------------------------------------------------------*/
+
+@media (max-width:769px){
+
+    
+    .mirrored-webcam {
+        transform: scaleX(-1);
+        position: "relative";
+        margin-left: 120px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 9;
+        width: 500px;
+        height: 370px;
+        margin-top: -45px;
+        border-radius: 12px;
+      
+      }
+      
+      .mirrored-canvas{
+        transform: scaleX(-1);
+        position: "absolute";
+        margin-left: 100px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 10;
+        width: 500px;
+        height: 370px;
+        margin-top: -45px;
+        margin-left: -500px;
+        border-radius: 12px;
+      
+      }
+
+
+    header {
+        background-color: #202020;
+        color: #fff;
+       /* padding: 15px 30px;*/
+        box-shadow: 2px 2px 10px 2px #7c7c7c;
+      }
+    
+    .navbar {
+    display: block;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .title {
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Monoton", sans-serif;
+    }
+    
+    span {
+    color: #ff0; 
+    }
+    
+    .link{
+    
+    }
+    
+    .link a {
+    text-decoration: none;
+    color: #fff;
+    padding:12px 24px 12px 24px;
+    font-family: "Alfa Slab One", serif;
+    font-size: 14px;
+    
+    }
+    
+    .link a:hover{
+    color: #ff0;
+    } 
+
+
+
+    .risultato .inside-box h1{
+    font-size: 35px;
+    font-family: "Monoton", sans-serif;
+    color: antiquewhite;
+    font-weight: 400;
+}
+    
+    .risultato .inside-box p{
+    font-size: 16px;
+    color: antiquewhite;
+    }
+
+
+
+
+    
+}
+
+
+
+  /*------------------------------------------------------------ MEDIA (max-width:426px) ------------------------------------------------------------*/
+
+  @media (max-width:426px){
+
+        
+    .mirrored-webcam {
+        transform: scaleX(-1);
+        position: "relative";
+        margin-left: 15px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 9;
+        width: 400px;
+        height: 270px;
+
+        margin-top: -45px;
+        border-radius: 12px;
+        
+        }
+        
+        .mirrored-canvas{
+        transform: scaleX(-1);
+        position: "absolute";
+        margin-left: 100px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 10;
+        width: 400px;
+        height: 270px;
+        margin-top: -45px;
+        margin-left: -400px;
+        border-radius: 12px;
+        
+    }
+
+    .title {
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Monoton", sans-serif;
+        }
+        
+    .introduction h1{
+        font-size: 19px;
+    }
+
+    .introduction p{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+  /*------------------------------------------------------------ MEDIA (max-width:426px) ------------------------------------------------------------*/
+
+  @media (max-width:426px){
+
+        
+    .mirrored-webcam {
+        transform: scaleX(-1);
+        position: "relative";
+        margin-left: 40px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 9;
+        width: 340px;
+        height: 220px;
+
+        margin-top: -45px;
+        border-radius: 12px;
+        
+        }
+        
+        .mirrored-canvas{
+        transform: scaleX(-1);
+        position: "absolute";
+        margin-left: 100px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 10;
+        width: 340px;
+        height: 220px;
+        margin-top: -45px;
+        margin-left: -340px;
+        border-radius: 12px;
+        
+    }
+
+    .title {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Monoton", sans-serif;
+        }
+        
+    .introduction h1{
+        font-size: 19px;
+    }
+
+    .introduction p{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+
+
+
+  /*------------------------------------------------------------ MEDIA (max-width:376px) ------------------------------------------------------------*/
+
+  @media (max-width:376px){
+
+        
+    .mirrored-webcam {
+        transform: scaleX(-1);
+        position: "relative";
+        margin-left: 15px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 9;
+        width: 350px;
+        height: 240px;
+
+        margin-top: -45px;
+        border-radius: 12px;
+        
+        }
+        
+        .mirrored-canvas{
+        transform: scaleX(-1);
+        position: "absolute";
+        margin-left: 100px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 10;
+        width: 350px;
+        height: 240px;
+        margin-top: -45px;
+        margin-left: -350px;
+        border-radius: 12px;
+        
+    }
+
+    .title {
+        font-size: 23px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Monoton", sans-serif;
+        }
+        
+    .introduction h1{
+        font-size: 17px;
+    }
+
+    .introduction p{
+        font-size: 16px;
+    }
+
+    .introduction{
+        padding-top: 35px;
+    }
+
+
+}
+
+
+
+
+
+  /*------------------------------------------------------------ MEDIA (max-width:321px) ------------------------------------------------------------*/
+
+  @media (max-width:321px){
+/*
+    header{
+        width: 100%;
+    }    */
+
+    .App{
+        margin-bottom: -60px;
+    }
+    
+    .mirrored-webcam {
+        transform: scaleX(-1);
+        position: "relative";
+        margin-left: 5px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 9;
+        width: 320px;
+        height: 220px;
+        margin-top: -45px;
+        border-radius: 12px;
+        margin-right: 0px;
+        
+        }
+        
+        .mirrored-canvas{
+        transform: scaleX(-1);
+        position: "absolute";
+        margin-left: 100px;
+        left:0;
+        right:0;
+        text-align: "center";
+        z-index: 10;
+        width: 320px;
+        height: 210px;
+        margin-top: -45px;
+        margin-left: -340px;
+        border-radius: 12px;
+        margin-right: 0px;
+        
+    }
+
+    .title {
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Monoton", sans-serif;
+        }
+        
+    .introduction h1{
+        font-size: 16px;
+    }
+
+    .introduction p{
+        font-size: 16px;
+    }
+
+    .introduction{
+        padding-top: 35px;
+    }
+
+    .link a{
+        font-size: 13px;
+    }
+
+    main{
+        margin-left: -5px;
+    }
+
+}
